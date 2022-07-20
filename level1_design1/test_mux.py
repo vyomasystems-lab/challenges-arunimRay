@@ -42,6 +42,9 @@ async def test_mux(dut):
     dut.inp30.value
     ]
      
+    randomlist = random.randint(0,3,31)
+    inp = randomList
+    
 
 
     cocotb.log.info('##### CTB: Develop your test here ########')
