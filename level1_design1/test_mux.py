@@ -68,7 +68,7 @@ async def test_mux(dut):
 """
     @cocotb.test()
     async def adder_basic_test(dut):
-        """Test for 5 + 10"""
+        
         A = 5
         B = 10
 
@@ -84,7 +84,7 @@ async def test_mux(dut):
 
     @cocotb.test()
     async def adder_randomised_test(dut):
-        """Test for adding 2 random numbers multiple times"""
+        
 
         for i in range(5):
 
