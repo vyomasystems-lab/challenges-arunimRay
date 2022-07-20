@@ -51,8 +51,7 @@ async def test_mux(dut):
         await Timer(2, units='ns')
         
         
-        assert dut.out.value == inp[sel], "Randomised test failed with: select line {sel}, when input = {inp} the output is {out}".format(
-            inp = inp[sel], sel=dut.sel.value, out=dut.out.value)
+        assert dut.out.value == inp[sel], "Randomised test failed with: select line {sel}".format(sel=dut.sel.value)
     
 
 
