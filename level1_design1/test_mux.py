@@ -47,7 +47,7 @@ async def test_mux(dut):
 
         inp = random.randint(0,3) 
         sel = dut.sel.value
-        sel = random.randint(0,31)
+        sel = random.randint(0,30)
         await Timer(2, units='ns')
         
         
