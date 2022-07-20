@@ -84,7 +84,7 @@ async def test_mux(dut):
 
     @cocotb.test()
     async def adder_randomised_test(dut):
-        
+        make
 
         for i in range(5):
 
