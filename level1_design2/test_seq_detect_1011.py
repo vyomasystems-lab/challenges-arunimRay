@@ -31,7 +31,8 @@ async def test_seq_bug1(dut):
             sum = 10*sum+bit_value
             dut.inp_bit.value = bit_value
             await FallingEdge(dut.clk)
-        assert dut.seq_seen.value == 1, "sequence generated{}".format(sum)
+        print(sum)
+        assert dut.seq_seen.value, "sequence generated{}".format(sum)
 
     """
     for i in range(5): # 5 experiments
