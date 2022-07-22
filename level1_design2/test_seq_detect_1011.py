@@ -29,10 +29,10 @@ async def test_seq_bug1(dut):
         for i in range(1,4):
             bit_value = random.randint(0, 1)
             sum = 10*sum+bit_value
-            dut.inp_bit = bit_value
+            dut.inp_bit.value = bit_value
             await FallingEdge(dut.clk)
         assert dut.seq_seen.value == 1, "sequence generated{}".format(sum)
-        
+
     """
     for i in range(5): # 5 experiments
         
